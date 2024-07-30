@@ -1,0 +1,14 @@
+1- abro os olhos
+2- se estiver com sede:
+	bebo água
+   senão
+	levanto da cama
+3- vou até o banheiro
+4- pego a escova de dentes
+5- coloco creme dental na escova de dentes
+6- Enquanto Dentes não estiverem limpos faça:
+	escovar dentes um à um
+7- ligar a torneira
+8- fazer "bochecho" com a agua
+9- desligar a torneira
+Fim

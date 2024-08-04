@@ -13,11 +13,47 @@ public class Main {
         List<String> listaNomes = Arrays.asList(nomesSeparados);
 
         Collections.sort(listaNomes);     // aqui deveria ordenar por ordem alfabética, mas está ordenando por tamanho de caracteres
+        System.out.println("Nomes em ordem: ");
         System.out.println(listaNomes);
 
-        System.out.print("Digite nome com traço e sexo sendo -f ou -m");
-        String nomeSexo = sc.nextLine();
+        //Parte 2
 
-        String[] nomeSexoSeparados = nomeSexo.split("-");
+        System.out.print("Quantos nomes você vai digitar?");
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        String[] arraySexos = new String[n];
+        String[] arrayNomes = new String[n];
+        for (int i = 0; i < n; i++){
+            System.out.print("Digite o nome " + (i+1) + ": ");
+            arrayNomes[i] = sc.nextLine();
+            System.out.print("Qual o sexo? (m/f?): ");
+            arraySexos[i] = sc.nextLine();
+        }
+
+        List<String> listNames = Arrays.asList(arrayNomes);
+        List<String> listSexos = Arrays.asList(arraySexos);
+
+        System.out.print("Nomes masculinos : ");
+        for (int i = 0; i < n; i++) {
+            if (Objects.equals(listSexos.get(i), "m")) {
+                System.out.print(listNames.get(i) + " ");
+            }
+        }
+
+        System.out.println();
+        System.out.print("Nomes femininos : ");
+        for (int i = 0; i < n; i++) {
+            if (Objects.equals(listSexos.get(i), "f")) {
+                System.out.print(listNames.get(i) + " ");
+            }
+        }
+
+
+
+
+
+
+
     }
 }

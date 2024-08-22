@@ -48,12 +48,5 @@ public class Main {
                 System.out.print(listNames.get(i) + " ");
             }
         }
-
-
-
-
-
-
-
     }
 }

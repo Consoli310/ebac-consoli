@@ -26,6 +26,6 @@ public class Main {
         System.out.println("Lista das mulheres: ");
         listaMulheres.forEach(System.out::println);
         sc.close();
-        
+
     }
 }
